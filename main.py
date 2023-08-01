@@ -6,8 +6,8 @@ from textblob import TextBlob
 from googletrans import Translator
 
 colunas = ['tamanho', 'ano', 'garagem']
-modelo = pickle.load(open('../../models/modelo.sav', 'rb'))
-
+#modelo = pickle.load(open('../../models/modelo.sav', 'rb'))
+modelo = pickle.load(open('models/modelo.sav', 'rb'))
 app = Flask(__name__)
 # app.config['BASIC_AUTH_USERNAME'] = os.environ.get('BASIC_AUTH_USERNAME')
 # app.config['BASIC_AUTH_PASSWORD'] = os.environ.get('BASIC_AUTH_PASSWORD')
